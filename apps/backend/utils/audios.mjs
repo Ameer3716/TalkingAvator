@@ -11,10 +11,10 @@ async function convertAudioToMp3({ inputPath, outputPath, audioData, mimeType, l
   
   if (!inputPath && audioData) {
     // If audioData is provided directly, write it to a temp file first
-    const dir = path.resolve('tmp');
-    if (!fs.existsSync(dir)){
-      fs.mkdirSync(dir, { recursive: true });
-    }
+    const dir = '/tmp'; // Use the absolute path for Vercel
+if (!fs.existsSync(dir)){
+  fs.mkdirSync(dir, { recursive: true });
+}
     
     const getExtension = (mimeType) => {
       if (!mimeType) return '.webm';
