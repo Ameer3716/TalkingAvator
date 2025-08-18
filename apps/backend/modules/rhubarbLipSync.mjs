@@ -170,55 +170,17 @@ const EMOTION_PHONEME_MODIFIERS = {
 };
 
 const getPhonemes = async ({ message, language = 'en', emotion = 'default', text = '' }) => {
+  // --- VERCEL COMPATIBILITY FIX ---
+  // Vercel cannot run the ffmpeg and rhubarb binaries, so we will ALWAYS use the fallback.
+  // This ensures the application runs smoothly in a serverless environment.
+
   try {
-    const time = new Date().getTime();
-    console.log(`Starting enhanced phoneme processing for message ${message} in ${language} with ${emotion} emotion`);
-    
-    const inputPath = path.join('/tmp', `message_${message}.mp3`);
-    const wavPath = path.join('/tmp', `message_${message}.wav`);
-    const outputJsonPath = path.join('/tmp', `message_${message}.json`);
-    
-    // Enhanced audio conversion with language-specific parameters
-    const conversionCommand = getLanguageSpecificFFmpegCommand(language, inputPath, wavPath);
-    
-    try {
-      await execCommand({ command: conversionCommand });
-      console.log(`Audio conversion completed in ${new Date().getTime() - time}ms`);
-    } catch (conversionError) {
-      console.error("FFmpeg conversion error:", conversionError.message);
-      throw new Error(`Audio conversion failed: ${conversionError.message}`);
-    }
-    
-    // Get language configuration
-    const langConfig = LANGUAGE_CONFIGS[language] || LANGUAGE_CONFIGS.en;
-    
-    // Check for Rhubarb executable
-    const rhubarbPath = findRhubarbExecutable();
-    
-    if (!rhubarbPath) {
-      console.warn("Rhubarb not found, creating advanced fallback");
-      await createAdvancedFallback(message, language, emotion, text, outputJsonPath);
-      return;
-    }
-    
-    // Build enhanced Rhubarb command with language support
-    const rhubarbCommand = buildRhubarbCommand(rhubarbPath, wavPath, outputJsonPath, text, langConfig);
-    
-    try {
-      await execCommand({ command: rhubarbCommand });
-      console.log(`Rhubarb processing completed in ${new Date().getTime() - time}ms`);
-      
-      // Post-process the results for enhanced multilingual support
-      await enhancePhonemeResults(outputJsonPath, language, emotion, text);
-      
-    } catch (rhubarbError) {
-      console.error(`Rhubarb processing failed: ${rhubarbError.message}`);
-      await createAdvancedFallback(message, language, emotion, text, outputJsonPath);
-    }
-    
+    const outputJsonPath = path.join('/tmp', `message_${message}.json`); // Use absolute path
+    console.log(`[Vercel Fix] Bypassing binaries and creating advanced fallback directly for message ${message}`);
+    await createAdvancedFallback(message, language, emotion, text, outputJsonPath);
   } catch (error) {
-    console.error(`Error in getPhonemes for message ${message}:`, error);
-    const outputJsonPath = `audios/message_${message}.json`;
+    console.error(`[Vercel Fix] Error creating advanced fallback for message ${message}:`, error);
+    const outputJsonPath = path.join('/tmp', `message_${message}.json`); // Use absolute path
     await createEmergencyFallback(message, outputJsonPath);
   }
 };
