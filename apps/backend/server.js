@@ -33,13 +33,10 @@ app.use(cors({
 
 const port = process.env.PORT || 3000;
 
-const requiredDirs = ['audios', 'bin', 'tmp'];
-requiredDirs.forEach(dir => {
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir, { recursive: true });
-    console.log(`Created directory: ${dir}`);
-  }
-});
+const tmpDir = '/tmp';
+if (!fs.existsSync(tmpDir)) {
+  fs.mkdirSync(tmpDir, { recursive: true });
+}
 
 app.use('/tmp', express.static(path.join(__dirname, 'tmp')));
 

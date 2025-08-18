@@ -1,7 +1,7 @@
 import { convertTextToSpeech } from "./elevenLabs.mjs";
 import { getPhonemes } from "./rhubarbLipSync.mjs";
 import { readJsonTranscript, audioFileToBase64 } from "../utils/files.mjs";
-
+import path from "path";
 const MAX_RETRIES = 10;
 const RETRY_DELAY = 100; // Increased delay for better rate limiting
 
@@ -173,7 +173,7 @@ const lipSync = async ({ messages, language = 'auto' }) => {
   // Process text-to-speech with language-specific settings
   await Promise.all(
     messages.map(async (message, index) => {
-      const fileName = `audios/message_${index}.mp3`;
+      const fileName = path.join('/tmp', `message_${index}.mp3`);
       
       // Detect language if not provided
       const detectedLanguage = language === 'auto' ? 
@@ -234,7 +234,7 @@ const lipSync = async ({ messages, language = 'auto' }) => {
         
         message.audio = await audioFileToBase64({ fileName });
         message.lipsync = await readJsonTranscript({ 
-          fileName: `audios/message_${index}.json` 
+          fileName: path.join('/tmp', `message_${index}.json`) 
         });
         
         // Add language metadata to message
