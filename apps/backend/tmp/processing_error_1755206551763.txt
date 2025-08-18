@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-08-14T21:22:46.274Z",
+  "transcription": "Can you please tell me about some nutrient?",
+  "error": "Bad request: {\"detail\":{\"status\":\"model_does_not_support_language_code_parameter\",\"message\":\"Model 'eleven_multilingual_v2' does not support the language code parameter. Please do not send it or set it to None.\"}}",
+  "stack": "Error: Bad request: {\"detail\":{\"status\":\"model_does_not_support_language_code_parameter\",\"message\":\"Model 'eleven_multilingual_v2' does not support the language code parameter. Please do not send it or set it to None.\"}}\n    at convertTextToSpeech (file:///F:/New%20folder%20(2)/2d-talking-main/apps/backend/modules/elevenLabs.mjs:136:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///F:/New%20folder%20(2)/2d-talking-main/apps/backend/modules/lip-sync.mjs:189:11\n    at async Promise.all (index 1)\n    at async lipSync (file:///F:/New%20folder%20(2)/2d-talking-main/apps/backend/modules/lip-sync.mjs:174:3)\n    at async file:///F:/New%20folder%20(2)/2d-talking-main/apps/backend/server.js:713:33",
+  "audioSize": 60864,
+  "mimeType": "audio/webm;codecs=opus"
+}

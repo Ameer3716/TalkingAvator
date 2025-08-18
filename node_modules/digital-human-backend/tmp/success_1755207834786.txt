@@ -1,0 +1,7 @@
+{
+  "timestamp": "2025-08-14T21:44:01.012Z",
+  "transcription": "Which places did you visited before?",
+  "language": "auto",
+  "audioSize": 61033,
+  "mimeType": "audio/webm;codecs=opus"
+}

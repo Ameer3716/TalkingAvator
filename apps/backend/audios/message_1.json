@@ -1,0 +1,394 @@
+{
+  "metadata": {
+    "soundFile": "F:\\New folder (2)\\2d-talking-main\\apps\\backend\\audios\\message_1.wav",
+    "duration": 9.01,
+    "language": "en",
+    "emotion": "default",
+    "enhanced": true,
+    "originalText": "The food, the art, the architecture - there's something enchanting around every corner. What would you like to know specifically about Paris?",
+    "processingTimestamp": "2025-08-14T21:42:19.768Z"
+  },
+  "mouthCues": [
+    {
+      "start": 0,
+      "end": 0.09,
+      "value": "X",
+      "languageTiming": 1
+    },
+    {
+      "start": 0.09,
+      "end": 0.17,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 0.17,
+      "end": 0.31,
+      "value": "B",
+      "sharpness": 1,
+      "languageTiming": 1,
+      "smoothTransition": 0.3,
+      "blendFromPrevious": true
+    },
+    {
+      "start": 0.31,
+      "end": 0.52,
+      "value": "G",
+      "sharpness": 1,
+      "languageTiming": 1,
+      "smoothTransition": 0.3,
+      "blendFromPrevious": true
+    },
+    {
+      "start": 0.52,
+      "end": 0.73,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 0.73,
+      "end": 0.96,
+      "value": "X",
+      "languageTiming": 1
+    },
+    {
+      "start": 0.96,
+      "end": 1.03,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 1.03,
+      "end": 1.1,
+      "value": "C",
+      "sharpness": 1,
+      "languageTiming": 1,
+      "smoothTransition": 0.3,
+      "blendFromPrevious": true
+    },
+    {
+      "start": 1.1,
+      "end": 1.31,
+      "value": "E",
+      "intensity": 1,
+      "languageTiming": 1
+    },
+    {
+      "start": 1.31,
+      "end": 1.45,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 1.45,
+      "end": 1.7,
+      "value": "X",
+      "languageTiming": 1
+    },
+    {
+      "start": 1.7,
+      "end": 1.76,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 1.76,
+      "end": 1.81,
+      "value": "C",
+      "sharpness": 1,
+      "languageTiming": 1,
+      "smoothTransition": 0.3,
+      "blendFromPrevious": true
+    },
+    {
+      "start": 1.81,
+      "end": 1.95,
+      "value": "C",
+      "sharpness": 1,
+      "languageTiming": 1,
+      "smoothTransition": 0.3,
+      "blendFromPrevious": true
+    },
+    {
+      "start": 1.95,
+      "end": 2.09,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 2.09,
+      "end": 2.23,
+      "value": "C",
+      "sharpness": 1,
+      "languageTiming": 1,
+      "smoothTransition": 0.3,
+      "blendFromPrevious": true
+    },
+    {
+      "start": 2.23,
+      "end": 2.44,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 2.44,
+      "end": 2.51,
+      "value": "E",
+      "intensity": 1,
+      "languageTiming": 1
+    },
+    {
+      "start": 2.51,
+      "end": 2.58,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 2.58,
+      "end": 3.12,
+      "value": "X",
+      "languageTiming": 1
+    },
+    {
+      "start": 3.12,
+      "end": 3.37,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 3.37,
+      "end": 3.44,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 3.44,
+      "end": 3.91,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 3.91,
+      "end": 3.98,
+      "value": "C",
+      "sharpness": 1,
+      "languageTiming": 1,
+      "smoothTransition": 0.3,
+      "blendFromPrevious": true
+    },
+    {
+      "start": 3.98,
+      "end": 4.12,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 4.12,
+      "end": 4.26,
+      "value": "C",
+      "sharpness": 1,
+      "languageTiming": 1,
+      "smoothTransition": 0.3,
+      "blendFromPrevious": true
+    },
+    {
+      "start": 4.26,
+      "end": 4.33,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 4.33,
+      "end": 4.4,
+      "value": "C",
+      "sharpness": 1,
+      "languageTiming": 1,
+      "smoothTransition": 0.3,
+      "blendFromPrevious": true
+    },
+    {
+      "start": 4.4,
+      "end": 4.47,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 4.47,
+      "end": 4.54,
+      "value": "C",
+      "sharpness": 1,
+      "languageTiming": 1,
+      "smoothTransition": 0.3,
+      "blendFromPrevious": true
+    },
+    {
+      "start": 4.54,
+      "end": 4.61,
+      "value": "B",
+      "sharpness": 1,
+      "languageTiming": 1,
+      "smoothTransition": 0.3,
+      "blendFromPrevious": true
+    },
+    {
+      "start": 4.61,
+      "end": 4.68,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 4.68,
+      "end": 5.03,
+      "value": "E",
+      "intensity": 1,
+      "languageTiming": 1
+    },
+    {
+      "start": 5.03,
+      "end": 5.1,
+      "value": "C",
+      "sharpness": 1,
+      "languageTiming": 1
+    },
+    {
+      "start": 5.1,
+      "end": 5.24,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 5.24,
+      "end": 6.15,
+      "value": "X",
+      "languageTiming": 1
+    },
+    {
+      "start": 6.15,
+      "end": 6.21,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 6.21,
+      "end": 6.26,
+      "value": "E",
+      "intensity": 1,
+      "languageTiming": 1
+    },
+    {
+      "start": 6.26,
+      "end": 6.54,
+      "value": "G",
+      "sharpness": 1,
+      "languageTiming": 1
+    },
+    {
+      "start": 6.54,
+      "end": 6.61,
+      "value": "E",
+      "intensity": 1,
+      "languageTiming": 1,
+      "smoothTransition": 0.3,
+      "blendFromPrevious": true
+    },
+    {
+      "start": 6.61,
+      "end": 6.82,
+      "value": "G",
+      "sharpness": 1,
+      "languageTiming": 1
+    },
+    {
+      "start": 6.82,
+      "end": 6.96,
+      "value": "C",
+      "sharpness": 1,
+      "languageTiming": 1
+    },
+    {
+      "start": 6.96,
+      "end": 7.03,
+      "value": "E",
+      "intensity": 1,
+      "languageTiming": 1
+    },
+    {
+      "start": 7.03,
+      "end": 7.1,
+      "value": "G",
+      "sharpness": 1,
+      "languageTiming": 1
+    },
+    {
+      "start": 7.1,
+      "end": 7.18,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 7.18,
+      "end": 7.49,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 7.49,
+      "end": 7.56,
+      "value": "B",
+      "sharpness": 1,
+      "languageTiming": 1,
+      "smoothTransition": 0.3,
+      "blendFromPrevious": true
+    },
+    {
+      "start": 7.56,
+      "end": 7.84,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 7.84,
+      "end": 7.92,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 7.92,
+      "end": 8.01,
+      "value": "C",
+      "sharpness": 1,
+      "languageTiming": 1
+    },
+    {
+      "start": 8.01,
+      "end": 8.08,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 8.08,
+      "end": 8.16,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 8.16,
+      "end": 8.37,
+      "value": "C",
+      "sharpness": 1,
+      "languageTiming": 1
+    },
+    {
+      "start": 8.37,
+      "end": 8.72,
+      "value": "A",
+      "languageTiming": 1
+    },
+    {
+      "start": 8.72,
+      "end": 9.01,
+      "value": "X",
+      "languageTiming": 1
+    }
+  ]
+}

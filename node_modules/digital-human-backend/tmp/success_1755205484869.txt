@@ -1,0 +1,7 @@
+{
+  "timestamp": "2025-08-14T21:04:55.053Z",
+  "transcription": "you",
+  "language": "auto",
+  "audioSize": 49427,
+  "mimeType": "audio/webm;codecs=opus"
+}

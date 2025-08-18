@@ -1,0 +1,7 @@
+{
+  "timestamp": "2025-08-15T18:10:42.984Z",
+  "transcription": "Good Jack, Nice to meet you.",
+  "language": "auto",
+  "audioSize": 49925,
+  "mimeType": "audio/webm;codecs=opus"
+}

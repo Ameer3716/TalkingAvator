@@ -1,0 +1,7 @@
+{
+  "timestamp": "2025-08-15T04:53:53.584Z",
+  "transcription": "Can we talk about traveling?",
+  "language": "auto",
+  "audioSize": 81381,
+  "mimeType": "audio/webm;codecs=opus"
+}

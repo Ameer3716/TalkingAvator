@@ -1,0 +1,36 @@
+{
+  "name": "digital-human-sdk",
+  "version": "1.0.0",
+  "description": "Universal SDK for Digital Human Integration",
+  "main": "dist/digital-human-sdk.umd.js",
+  "module": "dist/digital-human-sdk.esm.js",
+  "types": "digital-human-sdk.d.ts",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch",
+    "test": "jest",
+    "docs": "jsdoc -c jsdoc.json"
+  },
+  "keywords": [
+    "digital-human",
+    "ai-avatar",
+    "voice-assistant",
+    "text-to-speech",
+    "speech-to-text"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/digital-human-sdk"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "babel-loader": "^9.1.3",
+    "jest": "^29.6.1",
+    "jsdoc": "^4.0.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "timestamp": "2025-08-14T21:21:18.450Z",
+  "transcription": "Can you please tell me about traveling? Do you travel anywhere?",
+  "language": "auto",
+  "audioSize": 94570,
+  "mimeType": "audio/webm;codecs=opus"
+}

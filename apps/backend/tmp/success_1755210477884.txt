@@ -1,0 +1,7 @@
+{
+  "timestamp": "2025-08-14T22:28:04.484Z",
+  "transcription": "How are you? Are you a traveler? Where have you visited?",
+  "language": "auto",
+  "audioSize": 126291,
+  "mimeType": "audio/webm;codecs=opus"
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": "2025-08-14T20:55:41.490Z",
+  "error": "transcription.trim is not a function",
+  "stack": "TypeError: transcription.trim is not a function\n    at file:///F:/New%20folder%20(2)/2d-talking-main/apps/backend/server.js:663:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "requestBody": {
+    "hasAudio": true,
+    "audioLength": 120000,
+    "mimeType": "audio/webm;codecs=opus"
+  }
+}
