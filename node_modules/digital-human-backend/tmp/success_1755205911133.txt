@@ -1,0 +1,7 @@
+{
+  "timestamp": "2025-08-14T21:12:00.682Z",
+  "transcription": "For more information, visit www.fema.gov.",
+  "language": "auto",
+  "audioSize": 85169,
+  "mimeType": "audio/webm;codecs=opus"
+}
