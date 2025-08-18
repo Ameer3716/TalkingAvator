@@ -1,0 +1,7 @@
+{
+  "timestamp": "2025-08-14T21:40:30.469Z",
+  "transcription": "So, you are an assistant. How can you help me like traveling?",
+  "language": "auto",
+  "audioSize": 88452,
+  "mimeType": "audio/webm;codecs=opus"
+}

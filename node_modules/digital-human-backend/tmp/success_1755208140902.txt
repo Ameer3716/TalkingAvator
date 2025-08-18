@@ -1,0 +1,7 @@
+{
+  "timestamp": "2025-08-14T21:49:07.792Z",
+  "transcription": "So you are a traveler, what passages did you visit before?",
+  "language": "auto",
+  "audioSize": 76736,
+  "mimeType": "audio/webm;codecs=opus"
+}

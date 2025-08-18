@@ -1,0 +1,7 @@
+{
+  "timestamp": "2025-08-14T21:41:18.848Z",
+  "transcription": "Tell me about Paris.",
+  "language": "auto",
+  "audioSize": 57733,
+  "mimeType": "audio/webm;codecs=opus"
+}

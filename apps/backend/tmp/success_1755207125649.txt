@@ -1,0 +1,7 @@
+{
+  "timestamp": "2025-08-14T21:32:12.367Z",
+  "transcription": "So where are you traveling like which places do you travel?",
+  "language": "auto",
+  "audioSize": 89775,
+  "mimeType": "audio/webm;codecs=opus"
+}

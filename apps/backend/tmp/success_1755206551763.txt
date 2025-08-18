@@ -1,0 +1,7 @@
+{
+  "timestamp": "2025-08-14T21:22:38.533Z",
+  "transcription": "Can you please tell me about some nutrient?",
+  "language": "auto",
+  "audioSize": 60864,
+  "mimeType": "audio/webm;codecs=opus"
+}

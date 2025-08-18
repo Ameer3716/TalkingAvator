@@ -1,0 +1,7 @@
+{
+  "timestamp": "2025-08-14T21:35:46.730Z",
+  "transcription": "Nice talking with you, Jack. Try more to listen to you. I will visit some of them.",
+  "language": "auto",
+  "audioSize": 155509,
+  "mimeType": "audio/webm;codecs=opus"
+}

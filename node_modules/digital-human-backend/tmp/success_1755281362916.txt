@@ -1,0 +1,7 @@
+{
+  "timestamp": "2025-08-15T18:09:28.520Z",
+  "transcription": "Hello, how are you?",
+  "language": "auto",
+  "audioSize": 42867,
+  "mimeType": "audio/webm;codecs=opus"
+}
