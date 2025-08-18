@@ -270,10 +270,10 @@ async function convertAudioToText({ audioData, mimeType, language = 'auto', opti
   }
 
   // Ensure tmp directory exists
-  const tmpDir = path.resolve("tmp");
-  if (!fs.existsSync(tmpDir)) {
-    fs.mkdirSync(tmpDir, { recursive: true });
-  }
+const tmpDir = "/tmp"; // Use the absolute path for Vercel
+if (!fs.existsSync(tmpDir)) {
+  fs.mkdirSync(tmpDir, { recursive: true });
+}
 
   const timestamp = Date.now();
   const originalPath = path.join(tmpDir, `whisper_input_${timestamp}.webm`);
@@ -642,10 +642,11 @@ async function basicAudioToText({ audioData, mimeType }) {
     throw new Error("OpenAI client not initialized");
   }
 
-  const tmpDir = path.resolve("tmp");
-  if (!fs.existsSync(tmpDir)) {
-    fs.mkdirSync(tmpDir, { recursive: true });
-  }
+ // Ensure tmp directory exists
+const tmpDir = "/tmp"; // Use the absolute path for Vercel
+if (!fs.existsSync(tmpDir)) {
+  fs.mkdirSync(tmpDir, { recursive: true });
+}
 
   const timestamp = Date.now();
   const inputPath = path.join(tmpDir, `basic_input_${timestamp}.webm`);
