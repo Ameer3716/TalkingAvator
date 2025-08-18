@@ -174,15 +174,9 @@ const getPhonemes = async ({ message, language = 'en', emotion = 'default', text
     const time = new Date().getTime();
     console.log(`Starting enhanced phoneme processing for message ${message} in ${language} with ${emotion} emotion`);
     
-<<<<<<< HEAD
     const inputPath = path.join('/tmp', `message_${message}.mp3`);
     const wavPath = path.join('/tmp', `message_${message}.wav`);
     const outputJsonPath = path.join('/tmp', `message_${message}.json`);
-=======
-    const inputPath = `audios/message_${message}.mp3`;
-    const wavPath = `audios/message_${message}.wav`;
-    const outputJsonPath = `audios/message_${message}.json`; // Fixed variable name
->>>>>>> fdb21236b05179a4ebd4c38ae730d678a534f851
     
     // Enhanced audio conversion with language-specific parameters
     const conversionCommand = getLanguageSpecificFFmpegCommand(language, inputPath, wavPath);
@@ -298,11 +292,7 @@ const buildRhubarbCommand = (rhubarbPath, wavPath, jsonPath, text, langConfig) =
   
   // Add text dialog if provided, but as a separate file for better compatibility
   if (text && text.trim() && text.length < 500) {
-<<<<<<< HEAD
     const dialogPath = path.join('/tmp', `dialog_${Date.now()}.txt`);
-=======
-    const dialogPath = `audios/dialog_${Date.now()}.txt`;
->>>>>>> fdb21236b05179a4ebd4c38ae730d678a534f851
     try {
       fs.writeFileSync(dialogPath, text.trim());
       args.push(`-d "${dialogPath}"`);
