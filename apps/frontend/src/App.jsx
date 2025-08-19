@@ -117,26 +117,28 @@ function App() {
         minHeight: '100vh',
         position: 'relative',
         zIndex: 1,
-        padding: '2rem',
+        padding: window.innerWidth <= 768 ? '1rem' : '2rem',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        gap: '2rem'
+        gap: window.innerWidth <= 768 ? '1rem' : '2rem',
+        flexDirection: window.innerWidth <= 768 ? 'column' : 'row'
       }}>
-        {/* Left Side - Avatar Canvas */}
+        {/* Avatar Canvas - Top on Mobile, Left on Desktop */}
         <div style={{
           flex: '1',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          maxWidth: '800px'
+          maxWidth: window.innerWidth <= 768 ? '100%' : '800px',
+          width: '100%'
         }}>
           <h2 style={{
-            fontSize: '2rem',
+            fontSize: window.innerWidth <= 768 ? '1.5rem' : '2rem',
             fontWeight: 'bold',
             textAlign: 'center',
-            marginLeft:'25rem',
+            marginLeft: window.innerWidth <= 768 ? '0' : '25rem',
             marginBottom: '2rem',
             background: 'linear-gradient(to right, #22d3ee, #a855f7, #ec4899)',
             backgroundClip: 'text',
@@ -145,18 +147,20 @@ function App() {
             filter: 'drop-shadow(0 0 15px rgba(0,240,255,0.8))',
             animation: 'pulse 2s infinite'
           }}>
-            🤖 AI AVATAR
+            AI AVATAR
           </h2>
           
           <div style={{
             width: '100%',
-            height: '500px',
+            height: window.innerWidth <= 768 ? '350px' : '500px',
+            maxWidth: window.innerWidth <= 768 ? '350px' : '100%',
             border: '2px solid rgba(156, 163, 175, 0.5)',
             borderRadius: '0.75rem',
             background: 'white',
             position: 'relative',
             overflow: 'hidden',
-            boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)'
+            boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+            margin: '0 auto'
           }}>
             <Canvas shadows camera={{ position: [0, 0, 0], fov: 10 }}>
               <Scenario />
@@ -173,7 +177,7 @@ function App() {
               background: 'rgba(0, 0, 0, 0.7)',
               backdropFilter: 'blur(10px)',
               borderRadius: '9999px',
-              padding: '0.5rem 1rem',
+              padding: window.innerWidth <= 768 ? '0.25rem 0.75rem' : '0.5rem 1rem',
               boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)'
             }}>
               <div style={{
@@ -186,7 +190,7 @@ function App() {
               }}></div>
               <span style={{
                 color: 'white',
-                fontSize: '0.875rem',
+                fontSize: window.innerWidth <= 768 ? '0.75rem' : '0.875rem',
                 fontWeight: '500'
               }}>LIVE</span>
             </div>
@@ -200,7 +204,7 @@ function App() {
               background: 'rgba(17, 24, 39, 0.8)',
               backdropFilter: 'blur(10px)',
               borderRadius: '0.5rem',
-              padding: '0.75rem',
+              padding: window.innerWidth <= 768 ? '0.5rem' : '0.75rem',
               border: '1px solid rgba(34, 211, 238, 0.3)'
             }}>
               <div style={{
@@ -211,12 +215,12 @@ function App() {
                 <div>
                   <div style={{
                     color: '#22d3ee',
-                    fontSize: '0.875rem',
+                    fontSize: window.innerWidth <= 768 ? '0.75rem' : '0.875rem',
                     fontWeight: '500'
                   }}>AI Avatar</div>
                   <div style={{
                     color: '#d1d5db',
-                    fontSize: '0.75rem'
+                    fontSize: window.innerWidth <= 768 ? '0.625rem' : '0.75rem'
                   }}>Real-time Animation</div>
                 </div>
                 <div style={{
@@ -250,21 +254,24 @@ function App() {
           </div>
         </div>
 
-        {/* Right Side - Chat Interface */}
+        {/* Chat Interface - Bottom on Mobile, Right on Desktop */}
         <div style={{
           flex: '1',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          maxWidth: '400px',
-          height: '100%'
+          maxWidth: window.innerWidth <= 768 ? '100%' : '400px',
+          height: '100%',
+          width: '100%'
         }}>
           <div style={{
             width: '100%',
-            height: '600px',
+            height: window.innerWidth <= 768 ? '400px' : '600px',
+            maxWidth: window.innerWidth <= 768 ? '350px' : '100%',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'center'
+            justifyContent: 'center',
+            margin: '0 auto'
           }}>
             <ChatInterface />
           </div>
