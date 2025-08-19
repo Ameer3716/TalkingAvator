@@ -174,9 +174,9 @@ const getPhonemes = async ({ message, language = 'en', emotion = 'default', text
     const time = new Date().getTime();
     console.log(`Starting enhanced phoneme processing for message ${message} in ${language} with ${emotion} emotion`);
     
-    const inputPath = `audios/message_${message}.mp3`;
-    const wavPath = `audios/message_${message}.wav`;
-    const outputJsonPath = `audios/message_${message}.json`; // Fixed variable name
+    const inputPath = path.join('/tmp', `message_${message}.mp3`);
+    const wavPath = path.join('/tmp', `message_${message}.wav`);
+    const outputJsonPath = path.join('/tmp', `message_${message}.json`);
     
     // Enhanced audio conversion with language-specific parameters
     const conversionCommand = getLanguageSpecificFFmpegCommand(language, inputPath, wavPath);
@@ -217,10 +217,10 @@ const getPhonemes = async ({ message, language = 'en', emotion = 'default', text
     }
     
   } catch (error) {
-    console.error(`Error in getPhonemes for message ${message}:`, error);
-    const outputJsonPath = `audios/message_${message}.json`;
-    await createEmergencyFallback(message, outputJsonPath);
-  }
+  console.error(`Error in getPhonemes for message ${message}:`, error);
+  const outputJsonPath = path.join('/tmp', `message_${message}.json`); // <-- FIX
+  await createEmergencyFallback(message, outputJsonPath);
+}
 };
 
 // Language-specific FFmpeg command builder
