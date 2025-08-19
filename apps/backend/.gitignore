@@ -16,7 +16,7 @@
 # production
 /build
 
-# misc
+# misc 
 .DS_Store
 *.pem
 
@@ -36,5 +36,3 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# visemes inference
-/bin
